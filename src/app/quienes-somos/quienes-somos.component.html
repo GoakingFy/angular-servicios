@@ -1,5 +1,14 @@
 <p>quienes-somos works!</p>
 
-<input type="button" value="GET" class="btn btn-secondary" (click)="get()">
+    <input type="button" value="GET" class="btn btn-primary" (click)="get()">
+    <input type="text" [(ngModel)]="inputIdGet">
+    <input type="button" value="GET" class="btn btn-secondary" (click)="get3()">
 
-{{this.resultadoPeticion | json}}
+    <input type="button" (click)="post()" class="btn btn-success" value="POST">
+    <input type="button" (click)="put()" class="btn btn-warning" value="PUT">
+    <input type="button" (click)="patch()" class="btn btn-info" value="PATCH">
+    <input type="button" (click)="patch()" class="btn btn-danger" value="DELETE">
+    <pre>
+
+        {{this.resultadoPeticion | json}}
+    </pre>
